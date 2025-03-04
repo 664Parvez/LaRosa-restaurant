@@ -7,7 +7,7 @@
     --first-color: #DC3A1E;
     --shadow-color: #d6d6d6;
     --offwhite-color: #FAF9F6;
-    --red-color: #ff1100;
+    --red-color: #ac1f24;
     --rating-color: #ff5e00;
     --light-red-color: #F3EDEA;
 }
@@ -51,7 +51,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Fraunces", serif;
 }
-p, span, li, a, small {
+p, span, li, a, small, .btn {
     font-family: "Outfit", sans-serif;
 }
 
@@ -94,8 +94,22 @@ body {
 .top_nav_social ul li:last-child {
     padding-right: 0;
 }
+#top_nav_social_icon {
+    padding-top: 7px;
+}
 #top_nav .btn {
     background-color: var(--second-color);
+}
+#reservation_btn {
+    background-color: var(--white-color) !important;
+    color: var(--first-color);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 30px;
+}
+#reservation_btn:hover {
+    background-color: var(--red-color) !important;
+    color: var(--white-color);
 }
 
 
@@ -166,19 +180,92 @@ nav .nav-link {
 
 
 footer {
-    background-image: url();
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../img/footer-bg-overlay.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px 0;
+    padding-top: 50px;
 }
 footer .footer_first_part {
     padding: 30px 0;
+}
+footer hr {
+    color: var(--white-color);
 }
 footer .footer_first_part i {
     color: var(--first-color);
     font-size: 20px;
 }
+footer .footer_first_part h3 {
+    color: var(--white-color);
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+}
+footer .footer_first_part p {
+    color: var(--white-color);
+}
+
+footer .footer_second_part {
+    padding: 50px 0;
+}
+footer .footer_second_part img {
+    width: 230px;
+    height: 100%;
+    margin-bottom: 30px;
+}
+.subscribe_btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+.footer_learn_more_btn {
+    color: var(--white-color);
+    background-color: var(--first-color);
+}
+.footer_learn_more_btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+.subscribe_btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+footer .footer_second_part p {
+    color: var(--white-color);
+}
+footer .footer_second_part h5 {
+    color: var(--white-color);
+    font-weight: 300;
+    font-size: 23px;
+    font-style: italic;
+}
+footer .footer_second_part h6 {
+    color: var(--white-color);
+}
+footer .footer_social_media ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+footer .footer_social_media ul li a {
+    color: var(--white-color);
+    font-size: 20px;
+}
+footer .quick_link_menu li {
+    margin: 10px 0;
+}
+footer .quick_link_menu li a {
+    color: var(--white-color);
+}
+footer .support_link_menu li {
+    margin: 10px 0;
+}
+footer .support_link_menu li a {
+    color: var(--white-color);
+}
+footer .footer_social_media ul li:first-child {
+    margin-left: 0;
+}
+
 footer .footer_copywrite_part {
     background-color: var(--first-color);
     padding: 10px 0;
