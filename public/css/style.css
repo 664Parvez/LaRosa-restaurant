@@ -203,6 +203,9 @@ nav .btn:hover {
     .text-wrap-menu {
         text-wrap: auto;
     }
+    nav .btn {
+        margin-top: 30px;
+    }
 }
 @media only screen and (min-width: 501px) and (max-width: 800px) {
     #top_nav {
@@ -220,7 +223,7 @@ nav .btn:hover {
     position: fixed;
     right: 0;
     top: 200px;
-    padding: 10px;
+    padding: 10px 8px;
     text-align: center;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -228,6 +231,12 @@ nav .btn:hover {
 }
 #sidebar_icon hr {
     color: var(--white-color);
+}
+#sidebar_icon sup {
+    background-color: var(--offwhite-color);
+    color: var(--first-color);
+    padding: 2px;
+    border-radius: 50%;
 }
 #sidebar_icon ul li {
     margin: 15px 0;
@@ -238,7 +247,8 @@ nav .btn:hover {
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     #sidebar_icon {
         top: 130px;
-    }
+        padding: 5px;
+    }   
 }
 
 
@@ -314,6 +324,11 @@ footer .footer_social_media ul li {
 footer .footer_social_media ul li a {
     color: var(--white-color);
     font-size: 20px;
+    transition: all .5s ease-in-out;
+}
+footer .footer_social_media ul li a:hover {
+    color: var(--first-color);
+    transition: all .5s ease-in-out;
 }
 footer .quick_link_menu li {
     margin: 10px 0;
