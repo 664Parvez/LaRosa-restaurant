@@ -24,14 +24,11 @@
         <div class="d-flex justify-content-between align-items-center">
             <div class="mx-2 top_nav_number">
                 <ul>
-                    <li>
-                        <a href="mailto:info@CTGLawyers.com.au"><i class="fa-solid fa-envelope"></i> | info@larosacoxbd.com.au</a>
+                    <li class="top_nav_email">
+                        <a href="mailto:info@larosacoxbd.com"><i class="fa-solid fa-envelope"></i> | info@larosacoxbd.com</a>
                     </li>
-                    <li>
-                         <i class="fa-solid fa-phone"></i> 1800 497 102
-                    </li>
-                    <li>
-                        <a href="https://wa.me/0424252787"><i class="fa-brands fa-whatsapp"></i> 0424 252 787</a>
+                    <li class="top_nav_phone">
+                        <a href="https://wa.me/01707331827"><i class="fa-brands fa-whatsapp"></i> +880 1707-331827</a>
                     </li>
                 </ul>
             </div>
@@ -62,7 +59,58 @@
      </div>
 
      <!-- Main Navbar -->
-     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <div id="main_navbar">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="./index.html">
+                        <img class="main_navbar_logo" src="./public/img/nav-logo.png" alt="">
+                    </a>
+                </div>
+               <div>
+                   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                       <div class="container-fluid">
+                       <a class="navbar-brand" href="./index.html">
+                           <img src="./public/image/logo.png" alt="">
+                       </a>
+                       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                       </button>
+                           <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                               <div class="offcanvas-header">
+                                   <img src="./public/image/website-logo.png" alt="">
+                                   <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                               </div>
+                               <ul class="navbar-nav ms-lg-auto mx-4 mb-2 mb-lg-0">
+                                   <li class="nav-item">
+                                       <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a href="./about-us.html" class="nav-link">Online Menu</a>
+                                    </li>
+                                   <li class="nav-item">
+                                       <a href="./about-us.html" class="nav-link">About Us</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a href="./blog.html" class="nav-link">Blog</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a href="./contact-us.html" class="nav-link">Contact Us</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a href="./contact-us.html" class="nav-link btn">Login / Signup</a>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </nav>
+               </div>
+            </div>
+        </div>
+     </div>
+
+
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
             <img src="./public/image/logo.png" alt="">
@@ -155,14 +203,33 @@
                     <li class="nav-item">
                         <a href="./contact-us.html" class="nav-link">Contact Us</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a href="./assessment-form.html" class="btn mt-1" id="reservation_btn">Make A Reservation</a>
-                    </li> -->
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
+    
     <!-- Navbar -->
+
+    <!-- Sidebar icon -->
+     <div id="sidebar_icon">
+        <ul>
+            <li class="nav-item userIcon">
+                <a href="./contact-us.html" class="nav-link"><i class="fa-regular fa-user"></i></a>
+            </li>
+            <hr>
+            <li class="nav-item heartIcon">
+                <a href="./contact-us.html" class="nav-link"><i class="fa-solid fa-heart"></i><sup>02</sup></a>
+            </li>
+            <hr>
+            <li class="nav-item">
+                <a href="./contact-us.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i><sup>06</sup></a>
+            </li>
+            <hr>
+            <li class="nav-item searchIcon">
+                <a href="./contact-us.html" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+        </ul>
+     </div>
 
 
     <!-- Hero -->

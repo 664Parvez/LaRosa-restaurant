@@ -62,10 +62,10 @@ body {
 }
 
 
-/* Navbar */
+/* Top Navbar */
 #top_nav {
     background-color: var(--first-color);
-    padding: 8px 25px;
+    padding: 6px 25px;
 }
 #top_nav ul li a {
     color: var(--white-color);
@@ -114,11 +114,16 @@ body {
 
 
 /* Main Navbar */
-.navbar {
+#main_navbar {
+    background-color: var(--light-red-color);
     position: sticky;
     top: 0;
-    background-color: var(--light-red-color);
     z-index: 999;
+}
+#main_navbar .main_navbar_logo {
+    width: 100px;
+    height: 100%;
+    margin-left: 30px;
 }
 .navbar-toggler:focus {
     box-shadow: none;
@@ -157,6 +162,15 @@ nav .nav-link {
     font-weight: 600;
     font-size: 18px;
 }
+nav .btn {
+    background-color: var(--first-color);
+    border-radius: 30px;
+    color: var(--white-color);
+}
+nav .btn:hover {
+    background-color: var(--red-color);
+    color: var(--offwhite-color);
+}
 .offcanvas.show:not(.hiding) {
     overflow-y: scroll;
 }
@@ -171,13 +185,64 @@ nav .nav-link {
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     #top_nav {
-        display: none;  
+        padding: 6px 15px;
+    }
+    #main_navbar .main_navbar_logo {
+        margin-left: 10px;
+        width: 80px;
+    }
+    #top_nav #top_nav_social_icon {
+        display: none;
+    }
+    #top_nav .top_nav_email {
+        display: none;
+    }
+    .top_nav_number .top_nav_phone {
+        padding-left: 0;
     }
     .text-wrap-menu {
         text-wrap: auto;
     }
 }
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+    #top_nav {
+        padding: 6px 15px;
+    }
+    #main_navbar .main_navbar_logo {
+        margin-left: 10px;
+    }
+}
 
+
+/* Sidebar Icon */
+#sidebar_icon {
+    background-color: var(--red-color);
+    position: fixed;
+    right: 0;
+    top: 200px;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 800;
+}
+#sidebar_icon hr {
+    color: var(--white-color);
+}
+#sidebar_icon ul li {
+    margin: 15px 0;
+}
+#sidebar_icon ul li a {
+    color: var(--white-color);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #sidebar_icon {
+        top: 130px;
+    }
+}
+
+
+/* Footer */
 
 footer {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../img/footer-bg-overlay.jpg");
@@ -199,7 +264,7 @@ footer .footer_first_part i {
 footer .footer_first_part h3 {
     color: var(--white-color);
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 500;
     font-style: italic;
 }
 footer .footer_first_part p {
