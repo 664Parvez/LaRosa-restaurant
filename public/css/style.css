@@ -10,6 +10,8 @@
     --red-color: #ac1f24;
     --rating-color: #ff5e00;
     --light-red-color: #F3EDEA;
+    --first-font: "Fraunces", serif;
+    --second-font: "Outfit", sans-serif;
 }
 
 /* width */
@@ -53,6 +55,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, span, li, a, small, .btn {
     font-family: "Outfit", sans-serif;
+}
+p {
+    font-size: 18px;
 }
 
 body {
@@ -159,8 +164,9 @@ nav .nav-item {
     padding: 0 5px;
 }
 nav .nav-link {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
+    color: var(--red-color);
 }
 nav .btn {
     background-color: var(--first-color);
@@ -250,6 +256,225 @@ nav .btn:hover {
         padding: 5px;
     }   
 }
+
+
+
+/* Hero */
+#hero {
+    padding: 100px 0;
+    position: relative;
+}
+#hero h5 {
+    font-size: 25px;
+    font-weight: 400;
+}
+#hero h1 {
+    font-size: 120px;
+    font-weight: 400;
+}
+#hero h1 span img {
+    width: 200px;
+    height: 100%;
+    border-radius: 55px;
+}
+#hero p {
+    font-size: 18px;
+}
+#hero .hero_text_change_color {
+    color: var(--first-color);
+    font-family: var(--first-font);
+    font-style: italic;
+}
+#hero .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border-radius: 40px;
+}
+#hero .btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+
+#hero .chilli_img {
+    position: absolute;
+    left: 50px;
+    animation: cillLeafAnim 3s linear infinite alternate;
+}
+#hero .leaf_img {
+    position: absolute;
+    right: 50px;
+    animation: cillLeafAnim 8s linear infinite alternate;
+}
+
+@keyframes cillLeafAnim {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+ 
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #hero {
+        padding: 60px 0;
+    }
+    #hero h5 {
+        font-size: 18px;
+    }
+    #hero h1 {
+        font-size: 50px;
+    }
+    #hero h1 span img {
+        width: 100px;
+        height: 100%;
+        border-radius: 55px;
+    }
+    #hero p {
+        margin-top: 15px;
+    }
+    #hero .chilli_img {
+        display: none;
+    }
+    #hero .leaf_img {
+        display: none;
+    }
+}
+
+
+/* Home Second */
+#home_second_section {
+    background-color: var(--white-color);
+    padding: 60px 0;
+}
+#home_second_section i {
+    font-size: 30px;
+}
+#home_second_section h2 {
+    font-size: 50px;
+}
+.home_second_one {
+    background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.7)),url("../img/home2.1.jpg");
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+}
+.home_second_one h4 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: var(--white-color);
+}
+
+
+/* Contact Us Page */
+
+/* Breadcrumb */
+#breadcrumb {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../img/inner_HEADER_05.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    background-attachment: fixed;
+}
+#breadcrumb h1 {
+    font-size: 60px;
+    color: var(--white-color);
+}
+#breadcrumb p {
+    color: var(--white-color);
+}
+#breadcrumb p a {
+    color: var(--white-color);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #breadcrumb {
+        padding: 60px;
+    }
+    #breadcrumb h1 {
+        font-size: 45px;
+    }
+}
+
+/* Form */
+#contact_first_section {
+    padding: 60px 0;
+}
+#contact_first_section h2 {
+    font-size: 60px;
+}
+#contact_first_section ul li {
+    margin: 10px 0;
+}
+#contact_first_section button {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+#contact_first_section button:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+#contact_first_section .contact_form_side {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Form */
+
+/* contact second */
+#contact_second {
+    padding: 60px 0;
+}
+#contact_second img {
+    width: 100%;
+    border-radius: 10px;
+}
+#contact_second h2 {
+    font-size: 60px;
+}
+#contact_second .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+#contact_second .btn:hover {
+    background-color: var(--red-color);
+}
+/* contact second */
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #contact_second img {
+        margin-bottom: 20px;
+    }
+    #contact_first_section h2 {
+        font-size: 40px;
+    }
+    .contact_form_side {
+        margin-top: 20px;
+    }
+    #contact_second h2 {
+        font-size: 40px;
+    }
+}
+
+/* Contact Us Page */
+
+
+/* Book A Table */
+
+/* Book A Table */
+
+
+/* Login */
+/* Login */
+
+
+/* Signup */
+/* Signup */
+
 
 
 /* Footer */
