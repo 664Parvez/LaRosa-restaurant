@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 :root {
@@ -10,7 +10,7 @@
     --red-color: #ac1f24;
     --rating-color: #ff5e00;
     --light-red-color: #F3EDEA;
-    --first-font: "Fraunces", serif;
+    --first-font: "Italiana", sans-serif;
     --second-font: "Outfit", sans-serif;
     --div-color-one: #d8e5d6;
     --div-color-two: #E8DCC6;
@@ -605,6 +605,44 @@ nav .btn:hover {
     }
 }
 /* Cart */
+
+
+/* Checkout Page */
+#checkout_page {
+    padding: 60px 0;
+}
+#checkout_page .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border-radius: 30px;
+}
+#checkout_page .btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+#checkout_page .accordion-button {
+    background-color: var(--light-red-color);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+}
+#checkout_page .accordion-button:focus {
+    box-shadow: none;
+}
+#checkout_page .accordion-button:not(.collapsed) {
+    color: var(--first-color);
+}
+#checkout-button-addon2 {
+    border-radius: 0 !important;
+    border: none;
+}
+.checkout_online_payment_icon li {
+    display: inline-block;
+}
+.checkout_online_payment_icon li img {
+    width: 80px;
+}
+/* Checkout Page */
 
 
 /* Blog */
