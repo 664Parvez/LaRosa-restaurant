@@ -370,6 +370,9 @@ nav .btn:hover {
     left: 15px;
     color: var(--white-color);
 }
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+}
 
 
 /* Contact Us Page */
@@ -401,6 +404,67 @@ nav .btn:hover {
         font-size: 45px;
     }
 }
+/* Breadcrumb */
+
+
+/* Menu */
+#menu_page {
+    padding: 60px 0;
+}
+#menu_page #product_filter ul li {
+    display: inline-block;
+}
+#menu_page .form-select:focus {
+    box-shadow: none;
+}
+#menu_page .form-control:focus {
+    box-shadow: none;
+}
+#menu_page .nav-pills .nav-link.active {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+#menu_page .nav-link {
+    color: var(--red-color);
+}
+
+#menu_page .menu_second_section {
+    background-color: var(--first-color);
+    margin: 60px 0;
+}
+#menu_page .menu_second_section img {
+    width: 100%;
+}
+#menu_page .menu_second_section h5 {
+    color: var(--white-color);
+}
+#menu_page .menu_second_section h2 {
+    color: var(--white-color);
+    font-size: 60px;
+    font-weight: 600;
+}
+#menu_page .menu_second_section p {
+    color: var(--white-color);
+}
+#menu_page .menu_second_section .btn {
+    background-color: var(--white-color);
+    color: var(--red-color);
+    border-radius: 30px;
+}
+#menu_page .menu_second_section .btn:hover {
+    background-color: var(--offwhite-color);
+    color: var(--red-color);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #menu_page {
+        padding: 30px 0;
+    }
+    #menu_page .menu_second_section {
+        margin: 30px 0;
+    }
+}
+/* Menu */
+
 
 /* Form */
 #contact_first_section {
@@ -450,6 +514,12 @@ nav .btn:hover {
 /* contact second */
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
+    #contact_first_section {
+        padding: 30px 0;
+    }
+    #contact_second {
+        padding: 30px 0;
+    }
     #contact_second img {
         margin-bottom: 20px;
     }
@@ -591,6 +661,12 @@ nav .btn:hover {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
+    #cart_is_empty {
+        padding: 30px 0;
+    }
+    #cart_on_product {
+        padding: 30px 0;
+    }
     #cart_on_product .input-group {
         flex-wrap: nowrap;
     }
@@ -641,6 +717,14 @@ nav .btn:hover {
 }
 .checkout_online_payment_icon li img {
     width: 80px;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #checkout_page {
+        padding: 30px 0;
+    }
+    .checkout_online_payment_icon li img {
+        width: 60px;
+    }
 }
 /* Checkout Page */
 
@@ -779,6 +863,11 @@ nav .btn:hover {
 #related_post_div p, small {
     color: var(--black-color);
 }
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #blog_single_page {
+        padding: 30px 0;
+    }
+}
 /* Single Blog */
 
 
@@ -830,6 +919,11 @@ nav .btn:hover {
 }
 #signup_section a {
     color: var(--first-color);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #signup_section {
+        padding: 30px 0;
+    }
 }
 /* Signup */
 
