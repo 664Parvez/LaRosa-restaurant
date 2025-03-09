@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./public/img/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./public/css/style.css">
+
+    <title>About Us</title>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <div id="top_nav">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="mx-2 top_nav_number">
+                <ul>
+                    <li class="top_nav_email">
+                        <a href="mailto:info@larosacoxbd.com"><i class="fa-solid fa-envelope"></i> | info@larosacoxbd.com</a>
+                    </li>
+                    <li class="top_nav_phone">
+                        <a href="https://wa.me/01707331827"><i class="fa-brands fa-whatsapp"></i> +880 1707-331827</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mx-2 top_nav_social">
+                <div class="d-flex justify-content-center align-items center gap-4">
+                    <div id="top_nav_social_icon">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/ctglawyers"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/mohammed-nasir-ullah-3b009b218/"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="./book-a-table.html" class="btn" id="reservation_btn">Book A Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- Main Navbar -->
+     <div id="main_navbar">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="./index.html">
+                        <img class="main_navbar_logo" src="./public/img/nav-logo.png" alt="">
+                    </a>
+                </div>
+               <div>
+                   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                       <div class="container-fluid">
+                       <a class="navbar-brand" href="./index.html">
+                           <img src="./public/image/logo.png" alt="">
+                       </a>
+                       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                       </button>
+                           <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                               <div class="offcanvas-header">
+                                   <img src="./public/image/website-logo.png" alt="">
+                                   <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                               </div>
+                               <ul class="navbar-nav ms-lg-auto mx-4 mb-2 mb-lg-0">
+                                   <li class="nav-item">
+                                       <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a href="./our-menu.html" class="nav-link">Online Menu</a>
+                                    </li>
+                                   <li class="nav-item">
+                                       <a href="./about-us.html" class="nav-link">About Us</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a href="./blog.html" class="nav-link">Blog</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a href="./contact-us.html" class="nav-link">Contact Us</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a href="./login.html" class="nav-link btn">Login / Signup</a>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </nav>
+               </div>
+            </div>
+        </div>
+     </div>
+    
+    <!-- Navbar -->
+
+    <!-- Sidebar icon -->
+    <div id="sidebar_icon">
+        <ul>
+            <li class="nav-item userIcon">
+                <a href="./my-account.html" class="nav-link"><i class="fa-regular fa-user"></i></a>
+            </li>
+            <hr>
+            <li class="nav-item heartIcon">
+                <a href="./favourite.html" class="nav-link"><i class="fa-solid fa-heart"></i><sup>02</sup></a>
+            </li>
+            <hr>
+            <li class="nav-item">
+                <a href="./cart.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i><sup>06</sup></a>
+            </li>
+            <hr>
+            <li class="nav-item searchIcon">
+                <a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+        </ul>
+     </div>
+
+
+     <!-- Breadcrum -->
+      <div id="breadcrumb">
+        <div class="container">
+            <div class="text-center">
+                <h1>About Us</h1>
+                <p><a href="/">Home</a> | About Us</p>
+            </div>
+        </div>
+      </div>
+     <!-- Breadcrum -->
+
+
+
+    <!-- main Section -->
+    <section>
+        <div id="aboutus_page">
+            <div class="container">
+                <div class="about_first_section">
+                    <div class="text-center">
+                        <h5>About Us</h5>
+                        <h2>We invite you to visit our restaurant</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum eligendi aspernatur suscipit rerum perspiciatis, architecto neque voluptatem iure fuga perferendis libero dicta vitae asperiores repellendus.</p>
+
+                        <div class="mt-5">
+                            <iframe width="100%" height="600" src="https://www.youtube.com/embed/OhGJGUKh21E?si=K9OPluDczcXBC1Di" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="about_second_section">
+                    <div class="text-center">
+                        <h5>Features</h5>
+                        <h2>Why people choose us?</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum eligendi aspernatur suscipit rerum perspiciatis, architecto neque voluptatem iure fuga perferendis libero dicta vitae asperiores repellendus.</p>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-lg-4 mt-4">
+                            <div>
+                                <img class="mb-4" src="./public/img/icon-serv-1-256x256.png" alt="">
+                                <h4>Menu for every taste</h4>
+                                <p>Dolor sit amet, consectetur adipisicing elit et molestias possimus</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-4">
+                            <img class="mb-4" src="./public/img/icon-serv-2-256x256.png" alt="">
+                            <h4>Always fresh ingredients</h4>
+                            <p>Dolor sit amet, consectetur adipisicing elit et molestias possimus</p>
+                        </div>
+                        <div class="col-lg-4 mt-4">
+                            <img class="mb-4" src="./public/img/icon-serv-3-256x256.png" alt="">
+                            <h4>Experienced chefs</h4>
+                            <p>Dolor sit amet, consectetur adipisicing elit et molestias possimus</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="about_third_section">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 col-md-7">
+                            <h5>Time</h5>
+                            <h2>Opening hours</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ad ex quod ea alias quibusdam.</p>
+                            <div class="mt-5">
+                                <a href="./book-a-table.html" class="btn btn-lg">Reservation</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5">
+                            <div class="time_box text-center">
+                                <p>Sunday to Tuesday</p>
+                                <ul>
+                                    <li><h4>09:00 am</h4></li>
+                                    <li><h4>08:00 pm</h4></li>
+                                </ul>
+                                <hr>
+                                <p>Friday to Saturday</p>
+                                <ul>
+                                    <li><h4>10:00 am</h4></li>
+                                    <li><h4>09:00 pm</h4></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="about_forth_section">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="text-center">
+                                <h3>200 +</h3>
+                                <p>Visitors Daily</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="text-center">
+                                <h3>400 +</h3>
+                                <p>Deliveries Monthly</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="text-center">
+                                <h3>100 %</h3>
+                                <p>Positive Feedback</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="text-center">
+                                <h3>40 +</h3>
+                                <p>Awards and Honors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="about_fifth_section">
+                    <div class="text-center">
+                        <h5>Testimonials</h5>
+                        <h2>What Our visitors say</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum eligendi aspernatur suscipit rerum perspiciatis, architecto neque voluptatem iure fuga perferendis libero dicta vitae asperiores repellendus.</p>
+                    </div>
+
+                    <!-- Swiper -->
+                <div class="swiper testiSwiper mt-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                               <h4>The Best Restaurant</h4>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque a illum incidunt repellat earum voluptas corporis iure animi Cumque a illum incidunt repellat harum voluptates.</p>
+                               <hr>
+                               <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img src="./public/img/favicon.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Oscar Oldman</h6>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h4>The Best Restaurant</h4>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque a illum incidunt repellat earum voluptas corporis iure animi Cumque a illum incidunt repellat harum voluptates.</p>
+                               <hr>
+                               <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img src="./public/img/favicon.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Oscar Oldman</h6>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h4>The Best Restaurant</h4>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque a illum incidunt repellat earum voluptas corporis iure animi Cumque a illum incidunt repellat harum voluptates.</p>
+                               <hr>
+                               <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img src="./public/img/favicon.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Oscar Oldman</h6>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h4>The Best Restaurant</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque a illum incidunt repellat earum voluptas corporis iure animi Cumque a illum incidunt repellat harum voluptates.</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                     <div>
+                                         <img src="./public/img/favicon.png" alt="">
+                                     </div>
+                                     <div>
+                                         <h6 class="mb-0">Oscar Oldman</h6>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h4>The Best Restaurant</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque a illum incidunt repellat earum voluptas corporis iure animi Cumque a illum incidunt repellat harum voluptates.</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                     <div>
+                                         <img src="./public/img/favicon.png" alt="">
+                                     </div>
+                                     <div>
+                                         <h6 class="mb-0">Oscar Oldman</h6>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h4>The Best Restaurant</h4>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque a illum incidunt repellat earum voluptas corporis iure animi Cumque a illum incidunt repellat harum voluptates.</p>
+                               <hr>
+                               <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img src="./public/img/favicon.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Oscar Oldman</h6>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h4>The Best Restaurant</h4>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque a illum incidunt repellat earum voluptas corporis iure animi Cumque a illum incidunt repellat harum voluptates.</p>
+                               <hr>
+                               <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img src="./public/img/favicon.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Oscar Oldman</h6>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h4>The Best Restaurant</h4>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque a illum incidunt repellat earum voluptas corporis iure animi Cumque a illum incidunt repellat harum voluptates.</p>
+                               <hr>
+                               <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img src="./public/img/favicon.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Oscar Oldman</h6>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <h4>The Best Restaurant</h4>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque a illum incidunt repellat earum voluptas corporis iure animi Cumque a illum incidunt repellat harum voluptates.</p>
+                               <hr>
+                               <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img src="./public/img/favicon.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Oscar Oldman</h6>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main Section -->
+
+
+
+<!-- Footer -->
+<footer>
+    <div>
+        <div class="footer_first_part">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-4 my-3">
+                        <h3>Traditional Recipes for
+                            Your Delight</h3>
+                    </div>
+                    <div class="col-lg-4 col-md-4 my-3">
+                        <div class="d-flex justify-content-start align-items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="mb-0"><b>Our Address:</b></p>
+                                <p class="mb-0">256th North Neusvill Avenue, 19302, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 my-3">
+                        <div class="d-flex justify-content-start align-items-center gap-4">
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="mb-0"><b>Phone Number:</b></p>
+                                <p class="mb-0">0-800-525-00-250</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer_second_part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div>
+                            <img src="./public/img/footer-logo.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo magnam atque, iste illo voluptatum fugiat tenetur hic. Enim, est iusto quas obcaecati quidem vero quia...</p>
+
+                            <a href="/about-us" class="btn footer_learn_more_btn mt-4">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="mb-4">Quick Link</h5>
+                        <ul class="quick_link_menu">
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> Online Menu</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> Blog</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="mb-4">Support</h5>
+                        <ul class="support_link_menu">
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> FAQ</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> Terms & Conditions</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> Disclaimer</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> Refund Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="mb-4">Subscribe</h5>
+                        <h6>Keep up to date with us</h6>
+                        <p>Sign up to be the first to receive special news and event updates from us.</p>
+                        <form action="">
+                            <div class="input-group my-4">
+                                <input type="text" class="form-control form-control-lg" placeholder="Subscribe" aria-label="Subscribe" aria-describedby="button-addon2">
+                                <button class="btn subscribe_btn" type="button" id="button-addon2"><i class="fa-regular fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+
+                        <div class="footer_social_media">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copywrite_part">
+            <div class="container">
+                <div class="text-center">
+                    <p class="mb-0">© <span id="copyDate"></span> LaRosa Cox BD. All Right Reserved. | Design & Development By :- <a href="https://www.digitalmarketingbd.com/">Digital Marketing Solution (Pvt.) Ltd.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Back to Top -->
+<button
+    type="button" class="btn btn-floating"
+    id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<!-- Back to Top -->
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".testiSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+      loop: true,
+      breakpoints: {
+            300: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      grabCursor: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+<!-- Custom JS -->
+<script src="./public/js/app.js"></script>
+
+<!-- Copyright Script -->
+<script>
+
+    //Get the button
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    const copyright = document.getElementById("copyDate")
+    
+    const copyDate = new Date().getFullYear()
+    copyright.innerText = copyDate
+</script>
+<!-- Copyright Script -->
+
+</body>
+</html>
