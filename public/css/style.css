@@ -631,6 +631,46 @@ nav .btn:hover {
 
 /* Home Page */
 
+
+/* FAQ */
+#faq_page {
+    padding: 60px 0;
+}
+#faq_page h2 {
+    font-size: 60px;
+    font-weight: 600;
+}
+.faq_form_box {
+    background-color: var(--div-color-one);
+    padding: 20px;
+    border-radius: 10px;
+}
+.faq_form_box .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+    margin-top: 30px;
+}
+.faq_form_box .btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #faq_page {
+        padding: 30px 0;
+    }
+    #faq_page h2 {
+        font-size: 40px;
+    }
+    .faq_form_box {
+        margin-top: 30px;
+    }
+}
+/* FAQ */
+
+
 /* About Us Page */
 .about_first_section {
     padding: 60px 0;
