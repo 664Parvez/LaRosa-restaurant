@@ -326,7 +326,8 @@ nav .btn:hover {
         padding: 60px 0;
     }
     #hero h5 {
-        font-size: 18px;
+        font-size: 23px;
+        font-weight: 600;;
     }
     #hero h1 {
         font-size: 50px;
@@ -347,6 +348,29 @@ nav .btn:hover {
     }
 }
 
+/* Home Page */
+
+/* Home Craft */
+#home_crafted_section {
+    padding: 60px 0;
+}
+#home_crafted_section h3 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#home_crafted_section img {
+    width: 100%;
+}
+#home_crafted_section .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+#home_crafted_section .btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+/* Home Craft */
 
 /* Home Second */
 #home_second_section {
@@ -372,11 +396,221 @@ nav .btn:hover {
     position: absolute;
     bottom: 15px;
     left: 15px;
+    font-weight: 600;
     color: var(--white-color);
 }
-@media only screen and (min-width: 300px) and (max-width: 500px) {
+/* Home Second */
 
+
+/* Home Third */
+#home_third_section {
+    background-image: url("../img/w_pattern_50.png");
+    padding: 60px 0;
 }
+#home_third_section #home_third_first {
+    background-color: var(--white-color);
+}
+#home_third_section #home_third_first {
+    padding: 60px;
+}
+#home_third_section #home_third_first .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+#home_third_section #home_third_first .btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+#home_third_section #home_third_first h2 {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--first-color);
+}
+#home_third_section #home_third_first ul li {
+    margin: 30px 0;
+}
+#home_third_section #home_third_first ul li h4 {
+    font-weight: 600;
+}
+#home_third_section #home_third_first img {
+    width: 100%;
+}
+#home_third_section #home_third_second {
+    padding-top: 60px;
+}
+#home_third_section #home_third_second h3 {
+    font-size: 60px;
+    color: var(--first-color);
+    font-weight: 700;
+}
+#home_third_section #home_third_first h5 {
+    font-size: 23px;
+    font-weight: 600;
+}
+/* Home Third */
+
+/* Home forth */
+#home_forth_section {
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url("../img/parallax_07.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+#home_forth_section h5 {
+    color: var(--white-color);
+    font-size: 23px;
+    font-weight: 600;
+}
+#home_forth_section h2 {
+    color: var(--white-color);
+    font-size: 100px;
+    font-weight: 600;
+}
+#home_forth_section .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+    margin-top: 30px;
+}
+#home_forth_section .btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+/* Home forth */
+
+/* Home Blog */
+#blog_section {
+    background-color: var(--div-color-one);
+    padding: 60px;
+}
+#blog_section h3 {
+    font-size: 60px;
+    font-weight: 600;
+}
+#blog_section h5 {
+    font-size: 23px;
+    font-weight: 600;
+}
+#blog_section .blog_box img {
+    width: 100%;
+    border-radius: 10px;
+}
+#blog_section .blog_box h4 {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--red-color);
+}
+/* Home Blog */
+
+
+/* Google review */
+#google_review {
+    background-color: var(--div-color-two);
+    padding: 60px;
+}
+#google_review h3 {
+    font-size: 60px;
+    font-weight: 600;
+}
+/* Google review */
+
+
+/* Facebook review */
+#facebook_review {
+    padding: 60px;
+}
+#facebook_review h3 {
+    font-size: 60px;
+    font-weight: 600;
+}
+/* Facebook review */
+
+
+/* Home Product */
+#home_product_section {
+    padding: 60px 0;
+}
+#home_product_section img {
+    width: 150px;
+    height: 100%;
+}
+#home_product_section h2 {
+    font-size: 60px;
+}
+#home_product_section .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+    margin-top: 30px;
+    border-radius: 30px;
+}
+#home_product_section .btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+#home_product_box img {
+    width: 100%;
+}
+#home_product_box .btn {
+    border-radius: 5px;
+}
+#home_product_box .card h3 {
+    font-weight: 600;
+}
+#home_product_box .card h4 {
+    font-size: 35px;
+    font-weight: 600;
+}
+/* Home Product */
+
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #home_second_section {
+        padding: 30px 0;
+    }
+    #home_second_section h2 {
+        font-size: 40px;
+    }
+    #home_third_section {
+        padding: 30px 0;
+    }
+    #home_third_section #home_third_first {
+        padding: 15px;
+    }
+    #home_third_section #home_third_first h2 {
+        font-size: 40px;
+    }
+    #home_third_section #home_third_first img {
+        margin-top: 30px;
+    }
+    #home_forth_section {
+        padding: 60px 0;
+    }
+    #home_forth_section h2 {
+        font-size: 50px;
+    }
+    #home_crafted_section {
+        padding: 30px 0;
+    }
+    #home_crafted_section h3 {
+        font-size: 30px;
+    }
+    #blog_section {
+        padding: 30px 0;
+    }
+    #blog_section h3 {
+        font-size: 40px;
+    }
+    #home_product_section {
+        padding: 30px 0;
+    }
+    #home_product_section h2 {
+        font-size: 40px;
+    }
+}
+
+/* Home Page */
 
 /* About Us Page */
 .about_first_section {
@@ -663,6 +897,8 @@ nav .btn:hover {
     width: 100%;
 }
 #menu_page .menu_second_section h5 {
+    font-size: 23px;
+    font-weight: 600;
     color: var(--white-color);
 }
 #menu_page .menu_second_section h2 {
@@ -732,6 +968,8 @@ nav .btn:hover {
         margin-bottom: 0;
     }
     .menu_first_box h5 {
+        font-size: 23px;
+        font-weight: 600;
         margin-top: 15px;
     }
     .menu_first_box p {
