@@ -508,24 +508,13 @@ nav .btn:hover {
 /* Google review */
 #google_review {
     background-color: var(--div-color-two);
-    padding: 60px;
+    padding: 60px 0;
 }
 #google_review h3 {
     font-size: 60px;
     font-weight: 600;
 }
 /* Google review */
-
-
-/* Facebook review */
-#facebook_review {
-    padding: 60px;
-}
-#facebook_review h3 {
-    font-size: 60px;
-    font-weight: 600;
-}
-/* Facebook review */
 
 
 /* Home Product */
@@ -630,6 +619,12 @@ nav .btn:hover {
         padding: 30px 0;
     }
     #offer_banner h3 {
+        font-size: 40px;
+    }
+    #google_review {
+        padding: 30px 0;
+    }
+    #google_review h3 {
         font-size: 40px;
     }
 }
