@@ -62,6 +62,10 @@ p {
     font-size: 18px;
 }
 
+.form-control:focus {
+    box-shadow: none;
+}
+
 body {
     background-color: var(--light-red-color);
     max-width: 2000px;
@@ -1351,10 +1355,18 @@ footer .footer_copywrite_part a {
     text-decoration: none;
     color: var(--white-color);
 }
-
+#payment_icons {
+    background-color: var(--offwhite-color);
+}
+#payment_icons img {
+    width: 700px;
+}
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     footer .footer_second_part h5 {
         margin-top: 30px;
+    }
+    #payment_icons img {
+        width: 400px;
     }
 }
 
