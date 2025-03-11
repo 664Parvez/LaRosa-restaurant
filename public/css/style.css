@@ -564,6 +564,21 @@ nav .btn:hover {
 }
 /* Home Product */
 
+/* Offer Section */
+#offer_banner {
+    padding: 60px 0;
+}
+#offer_banner h3 {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--first-color);
+}
+#offer_banner img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* Offer Section */
+
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     #home_second_section {
@@ -606,6 +621,15 @@ nav .btn:hover {
         padding: 30px 0;
     }
     #home_product_section h2 {
+        font-size: 40px;
+    }
+    #home_product_section {
+        padding: 30px 0;
+    }
+    #offer_banner {
+        padding: 30px 0;
+    }
+    #offer_banner h3 {
         font-size: 40px;
     }
 }
