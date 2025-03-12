@@ -22,3 +22,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 });
+
+// Search Button
+const searchIcon = document.querySelector(".searchIcon")
+const search_form = document.querySelector(".search_form")
+const search_cross = document.getElementById("search_cross")
+
+searchIcon.addEventListener("click", (e) => {
+    search_form.classList.add("search_form_hide")
+    
+    e.preventDefault()
+})
+search_cross.addEventListener("click", (e) => {
+    search_form.classList.remove("search_form_hide")
+
+    e.preventDefault()
+})

@@ -256,6 +256,36 @@ nav .btn:hover {
 #sidebar_icon ul li a {
     color: var(--white-color);
 }
+.search_form {
+    position: fixed;
+    width: 350px;
+    right: 0;
+    top: 0px;
+    z-index: 999;
+    background-color: var(--div-color-one);
+    height: 100%;
+    display: none;
+    padding: 15px;
+}
+.search_form img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+.search_form h5 {
+    color: var(--first-color);
+    font-weight: 600;
+}
+.search_form p {
+    color: var(--black-color);
+}
+#search_cross {
+    font-size: 25px;
+    cursor: pointer;
+}
+.search_form_hide {
+    display: block !important;
+}
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     #sidebar_icon {
         top: 130px;
