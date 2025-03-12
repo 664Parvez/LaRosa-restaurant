@@ -183,9 +183,9 @@
                             <div class="row my-5">
                                 <div class="col-lg-5">
                                     <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <button class="btn btn-lg"><i class="fa-solid fa-plus"></i></button>
+                                        <button class="btn btn-lg count_increase"><i class="fa-solid fa-plus"></i></button>
                                         <input type="text" class="form-control form-control-lg text-center" value="0">
-                                        <button class="btn btn-lg"><i class="fa-solid fa-minus"></i></button>
+                                        <button class="btn btn-lg count_decrease"><i class="fa-solid fa-minus"></i></button>
                                     </div>
                                 </div>
                                 <div class="col-lg-7"></div>
@@ -212,18 +212,18 @@
                 <div id="single_description_review" class="my-5">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><h4>Description</h4></button>
+                          <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane" aria-selected="true"><h4>Description</h4></button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><h4>Reviews (0)</h4></button>
+                          <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews-tab-pane" type="button" role="tab" aria-controls="reviews-tab-pane" aria-selected="false"><h4>Reviews (0)</h4></button>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
                             <h3 class="my-4">Description</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda unde animi maxime repudiandae reiciendis, asperiores, amet delectus recusandae, itaque rerum dicta. Nisi, earum, recusandae omnis dignissimos doloribus repellendus ipsa expedita, amet natus dolores eveniet eum quod vero velit sunt odit vel animi sed ullam aperiam. Iure fuga dolorem perferendis.</p>
                         </div>
-                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
                             <h3 class="my-4">Reviews</h3>
                             <div class="d-flex justify-content-start align-items-center gap-4">
                                 <div>
@@ -242,15 +242,15 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <label for="" class="mt-4">Your review *</label>
-                                            <textarea name="" class="form-control form-control-lg" id="" placeholder="Write a review . . ."></textarea>
+                                            <textarea name="" rows="5" class="form-control form-control-lg" id="" placeholder="Write a review . . ." required></textarea>
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="" class="mt-4">Name *</label>
-                                            <input type="text" class="form-control form-control-lg" placeholder="Enter your name">
+                                            <input type="text" class="form-control form-control-lg" placeholder="Enter your name" required>
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="" class="mt-4">Email *</label>
-                                            <input type="text" class="form-control form-control-lg" placeholder="Enter your email">
+                                            <input type="text" class="form-control form-control-lg" placeholder="Enter your email" required>
                                         </div>
                                     </div>
 

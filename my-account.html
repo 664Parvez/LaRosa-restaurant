@@ -169,7 +169,188 @@
 
 
 <!-- Main Section -->
+<section>
+    <div id="account_page">
+        <div class="container">
 
+            <div class="my-5">
+                <h2><i>Hello,</i> <b>User Name</b></h2>
+                <p>You can manage your profile and orders from here</p>
+            </div>
+
+            <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard-tab-pane" type="button" role="tab" aria-controls="dashboard-tab-pane" aria-selected="true"><i class="fa-solid fa-laptop"></i> Dashboard</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="orders-tab" data-bs-toggle="tab" data-bs-target="#orders-tab-pane" type="button" role="tab" aria-controls="orders-tab-pane" aria-selected="false"><i class="fa-solid fa-cart-shopping"></i> Orders</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="download-tab" data-bs-toggle="tab" data-bs-target="#download-tab-pane" type="button" role="tab" aria-controls="download-tab-pane" aria-selected="false"><i class="fa-solid fa-download"></i> Downloads</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="address-tab" data-bs-toggle="tab" data-bs-target="#address-tab-pane" type="button" role="tab" aria-controls="address-tab-pane" aria-selected="false"><i class="fa-solid fa-address-book"></i> Shipping Address</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="account-tab" data-bs-toggle="tab" data-bs-target="#account-tab-pane" type="button" role="tab" aria-controls="account-tab-pane" aria-selected="false"><i class="fa-solid fa-circle-exclamation"></i> Account Details</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="logout-tab" data-bs-toggle="tab" data-bs-target="#logout-tab-pane" type="button" role="tab" aria-controls="logout-tab-pane" aria-selected="false"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="dashboard-tab-pane" role="tabpanel" aria-labelledby="dashboard-tab" tabindex="0">
+                    <div class="my-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 mt-4">
+                                <div>
+                                    <h4>Total Order</h4>
+                                    <canvas id="orderChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mt-4">
+                                <div>
+                                    <h4>Total Customer</h4>
+                                    <canvas id="customerChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="orders-tab-pane" role="tabpanel" aria-labelledby="orders-tab" tabindex="0">
+                    <div class="my-5">
+                        <div class="table-responsive">
+                            <table class="table table-striped-columns table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Order</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Items</th>
+                                    <th scope="col">Total</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>#458</td>
+                                    <td>May 25, 18</td>
+                                    <td>Completed</td>
+                                    <td>2</td>
+                                    <td>$235</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>#758</td>
+                                    <td>May 25, 18</td>
+                                    <td>Completed</td>
+                                    <td>1</td>
+                                    <td>$75</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>#158</td>
+                                    <td>May 25, 18</td>
+                                    <td>Completed</td>
+                                    <td>1</td>
+                                    <td>$42</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="download-tab-pane" role="tabpanel" aria-labelledby="download-tab" tabindex="0">
+                    <div class="my-5">
+                        <div class="table-responsive">
+                            <table class="table table-striped-columns table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Order</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Items</th>
+                                    <th scope="col">Total</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>#458</td>
+                                    <td>May 25, 18</td>
+                                    <td>Download Completed</td>
+                                    <td>2</td>
+                                    <td>$235</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>#758</td>
+                                    <td>May 25, 18</td>
+                                    <td>Download Completed</td>
+                                    <td>1</td>
+                                    <td>$75</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>#158</td>
+                                    <td>May 25, 18</td>
+                                    <td>Download Completed</td>
+                                    <td>1</td>
+                                    <td>$42</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="address-tab-pane" role="tabpanel" aria-labelledby="address-tab" tabindex="0">
+                    <div class="my-5">
+                        <p>Phone Number</p>
+                        <h4>+880 1457-841112</h4>
+                        <hr>
+                        <p>Shipping Address</p>
+                        <h4>Uttara, Dhaka - 1230</h4>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="account-tab-pane" role="tabpanel" aria-labelledby="account-tab" tabindex="0">
+                    <div class="my-5">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <label for="" class="mt-3">Name</label>
+                                    <input type="text" class="form-control form-control-lg" placeholder="name" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="" class="mt-3">Email (Optional)</label>
+                                    <input type="text" class="form-control form-control-lg" placeholder="Email">
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="" class="mt-3">Phone Number</label>
+                                    <input type="text" class="form-control form-control-lg" placeholder="Number" required>
+                                </div>
+                                <div class="col-lg-12">
+                                    <label for="" class="mt-3">Shipping Address</label>
+                                    <textarea name="" class="form-control form-control-lg" placeholder="Write your address" rows="3" id="" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <button type="submit" class="btn btn-lg saveChangeBtn">Save Change</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="logout-tab-pane" role="tabpanel" aria-labelledby="logout-tab" tabindex="0">
+                    <div class="my-5 text-center">
+                        <button type="submit" class="btn btn-lg logout_btn">Logout <i class="fa-solid fa-right-from-bracket"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- Main Section -->
 
 
@@ -295,6 +476,64 @@
 
 <!-- Custom JS -->
 <script src="./public/js/app.js"></script>
+
+<!-- Chart -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const ctx1 = document.getElementById('orderChart');
+  
+    new Chart(ctx1, {
+      type: 'bar',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 205, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(201, 203, 207, 0.2)'
+            ],
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+
+    const ctx2 = document.getElementById('customerChart');
+
+    new Chart(ctx2, {
+      type: 'line',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1,
+          borderColor: 'rgb(75, 192, 192)',
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+<!-- Chart -->
 
 <!-- Copyright Script -->
 <script>

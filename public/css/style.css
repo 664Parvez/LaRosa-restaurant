@@ -1314,6 +1314,41 @@ nav .btn:hover {
 /* Book A Table */
 
 
+/* Account */
+#account_page {
+    padding: 60px 0;
+}
+.logout_btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+.logout_btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+#account_page .nav-pills .nav-link {
+    color: var(--first-color);
+}
+#account_page .nav-pills .nav-link.active {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+.saveChangeBtn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+.saveChangeBtn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #account_page {
+        padding: 30px 0;
+    }
+}
+/* Account */
+
+
 /* Cart */
 #cart_is_empty {
     padding: 60px 0;
