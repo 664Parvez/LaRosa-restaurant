@@ -1048,6 +1048,101 @@ nav .btn:hover {
 /* Menu */
 
 
+/* Menu Single */
+#product_single_page {
+    padding: 60px 0;
+}
+#single_food_show h2 {
+    font-size: 60px;
+    font-weight: 600;
+}
+#single_food_show img {
+    width: 100%;
+}
+#single_food_show a {
+    color: var(--first-color);
+}
+#single_food_show .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+#single_food_show .btn:hover {
+    background-color: var(--red-color);
+}
+#single_description_review .nav-tabs .nav-link.active {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--first-color);
+}
+#single_description_review .nav-tabs .nav-link {
+    color: var(--black-color);
+}
+.reviewer_img {
+    width: 70px;
+    height: 70px;
+}
+#single_description_review h3 {
+    font-weight: 600;
+}
+#single_description_review hr {
+    color: var(--black-color);
+}
+#single_description_review .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border-radius: 30px;
+}
+#single_description_review .btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+#signle_related_product {
+    padding-top: 60px;
+}
+#signle_related_product h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+#signle_related_product h4 {
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--first-color);
+}
+#signle_related_product p {
+    color: var(--black-color);
+}
+#signle_related_product hr {
+    color: var(--black-color);
+}
+#signle_related_product .btn {
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border-radius: 30px;
+}
+#signle_related_product .btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #product_single_page {
+        padding: 30px 0;
+    }
+    #single_food_show h2 {
+        font-size: 40px;
+    }
+    #single_food_show img {
+        margin-bottom: 30px;
+    }
+    #signle_related_product h2 {
+        font-size: 30px;
+    }
+    #signle_related_product {
+        padding-top: 30px;
+    }
+}
+/* Menu Single */
+
+
 /* Form */
 #contact_first_section {
     padding: 60px 0;
