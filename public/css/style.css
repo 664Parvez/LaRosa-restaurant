@@ -81,7 +81,7 @@ body {
     height: 100vh;
     backdrop-filter: blur(20px);
     padding-top: 10px;
-    display: block;
+    display: none;
 }
 #offer_popup {
     background-color: var(--div-color-one);
