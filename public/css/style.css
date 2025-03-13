@@ -87,6 +87,7 @@ body {
     background-color: var(--div-color-one);
     padding: 20px;
     border-radius: 10px;
+    overflow-y: scroll;
 }
 #offer_popup img {
     width: 250px;
