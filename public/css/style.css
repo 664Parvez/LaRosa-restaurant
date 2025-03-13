@@ -70,6 +70,7 @@ body {
     background-color: var(--light-red-color);
     max-width: 2000px;
     margin: auto;
+    overflow-x: hidden;
 }
 
 #popup_offer {
