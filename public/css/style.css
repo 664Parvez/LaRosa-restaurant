@@ -88,6 +88,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     overflow-y: scroll;
+    height: 730px;
 }
 #offer_popup img {
     width: 250px;
