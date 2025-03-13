@@ -78,7 +78,7 @@ body {
     top: 0;
     z-index: 1500;
     background-color: transparent;
-    height: 100vh;
+    height: 100%;
     backdrop-filter: blur(20px);
     padding-top: 10px;
     display: none;
@@ -88,17 +88,17 @@ body {
     padding: 20px;
     border-radius: 10px;
     overflow-y: scroll;
-    height: 730px;
+    height: 700px;
 }
 #offer_popup img {
-    width: 250px;
+    width: 200px;
 }
 #popup_offer h5 {
     font-size: 30px;
     font-weight: 600;
 }
 #popup_offer h2 {
-    font-size: 130px;
+    font-size: 100px;
     font-weight: 700;
     color: var(--red-color);
 }
