@@ -4,7 +4,7 @@
 :root {
     --black-color: #000000;
     --white-color: #ffffff;
-    --first-color: #DC3A1E;
+    --first-color: #4169E1;
     --shadow-color: #d6d6d6;
     --offwhite-color: #FAF9F6;
     --red-color: #ac1f24;
@@ -72,10 +72,60 @@ body {
     margin: auto;
 }
 
+#popup_offer {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1500;
+    background-color: transparent;
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    padding-top: 10px;
+    display: block;
+}
+#offer_popup {
+    background-color: var(--div-color-one);
+    padding: 20px;
+    border-radius: 10px;
+}
+#offer_popup img {
+    width: 250px;
+}
+#popup_offer h5 {
+    font-size: 30px;
+    font-weight: 600;
+}
+#popup_offer h2 {
+    font-size: 130px;
+    font-weight: 700;
+    color: var(--red-color);
+}
+#popup_offer p {
+    font-size: 20px;
+}
+#popup_offer .btn {
+    width: 100%;
+}
+#popup_offer i {
+    font-size: 30px;
+    cursor: pointer;
+}
+#popup_offer .popup_nothanks {
+    cursor: pointer;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #offer_popup img {
+        width: 130px;
+    }
+    #popup_offer h2 {
+        font-size: 100px;
+    }
+}
+
 
 /* Top Navbar */
 #top_nav {
-    background-color: var(--first-color);
+    background-color: var(--red-color);
     padding: 6px 25px;
 }
 #top_nav ul li a {
@@ -119,7 +169,7 @@ body {
     border-radius: 30px;
 }
 #reservation_btn:hover {
-    background-color: var(--red-color) !important;
+    background-color: var(--first-color) !important;
     color: var(--white-color);
 }
 
@@ -175,12 +225,12 @@ nav .nav-link {
     color: var(--red-color);
 }
 nav .btn {
-    background-color: var(--first-color);
+    background-color: var(--red-color);
     border-radius: 30px;
     color: var(--white-color);
 }
 nav .btn:hover {
-    background-color: var(--red-color);
+    background-color: var(--first-color);
     color: var(--offwhite-color);
 }
 .offcanvas.show:not(.hiding) {
@@ -246,7 +296,7 @@ nav .btn:hover {
 }
 #sidebar_icon sup {
     background-color: var(--offwhite-color);
-    color: var(--first-color);
+    color: var(--red-color);
     padding: 2px;
     border-radius: 50%;
 }
@@ -273,7 +323,7 @@ nav .btn:hover {
     border-radius: 5px;
 }
 .search_form h5 {
-    color: var(--first-color);
+    color: var(--red-color);
     font-weight: 600;
 }
 .search_form p {
@@ -317,7 +367,7 @@ nav .btn:hover {
     font-size: 18px;
 }
 #hero .hero_text_change_color {
-    color: var(--first-color);
+    color: var(--red-color);
     font-family: var(--first-font);
     font-style: italic;
 }
@@ -454,7 +504,7 @@ nav .btn:hover {
 #home_third_section #home_third_first h2 {
     font-size: 60px;
     font-weight: 600;
-    color: var(--first-color);
+    color: var(--red-color);
 }
 #home_third_section #home_third_first ul li {
     margin: 30px 0;
@@ -470,7 +520,7 @@ nav .btn:hover {
 }
 #home_third_section #home_third_second h3 {
     font-size: 60px;
-    color: var(--first-color);
+    color: var(--red-color);
     font-weight: 700;
 }
 #home_third_section #home_third_first h5 {
@@ -559,13 +609,13 @@ nav .btn:hover {
     font-size: 60px;
 }
 #home_product_section .btn {
-    background-color: var(--first-color);
+    background-color: var(--red-color);
     color: var(--white-color);
     margin-top: 30px;
     border-radius: 30px;
 }
 #home_product_section .btn:hover {
-    background-color: var(--red-color);
+    background-color: var(--first-color);
     color: var(--white-color);
 }
 #home_product_box img {
@@ -581,6 +631,20 @@ nav .btn:hover {
     font-size: 35px;
     font-weight: 600;
 }
+#fish_icon {
+    animation: fishAnim 3s alternate linear infinite;
+}
+@keyframes fishAnim {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);  
+    }
+    100% {
+        transform: rotate(0deg);  
+    }
+}
 /* Home Product */
 
 /* Offer Section */
@@ -590,7 +654,7 @@ nav .btn:hover {
 #offer_banner h3 {
     font-size: 60px;
     font-weight: 600;
-    color: var(--first-color);
+    color: var(--red-color);
 }
 #offer_banner img {
     width: 100%;
@@ -711,7 +775,7 @@ nav .btn:hover {
 }
 .about_first_section h2 {
     font-size: 60px;
-    color: var(--first-color);
+    color: var(--red-color);
     font-weight: 600;
 }
 .about_first_section iframe {
@@ -730,7 +794,7 @@ nav .btn:hover {
 }
 .about_second_section h2 {
     font-size: 60px;
-    color: var(--first-color);
+    color: var(--red-color);
     font-weight: 600;
 }
 .about_second_section img {
@@ -796,7 +860,7 @@ nav .btn:hover {
     font-weight: 600;
 }
 .about_fifth_section h2 {
-    color: var(--first-color);
+    color: var(--red-color);
     font-size: 60px;
     font-weight: 700;
 }
@@ -964,7 +1028,7 @@ nav .btn:hover {
 }
 .menu_first_box h4 {
     font-weight: 700;
-    color: var(--first-color);
+    color: var(--red-color);
 }
 .menu_first_box p {
     color: var(--black-color);
@@ -979,7 +1043,7 @@ nav .btn:hover {
 }
 
 #menu_page .menu_second_section {
-    background-color: var(--first-color);
+    background-color: var(--red-color);
     margin: 60px 0;
 }
 #menu_page .menu_second_section img {
@@ -1017,7 +1081,7 @@ nav .btn:hover {
 #menu_page .menu_third_section #food_description h4 {
     font-size: 25px;
     font-weight: 600;
-    color: var(--first-color);
+    color: var(--red-color);
 }
 #menu_page .menu_third_section #food_description h5 {
     font-size: 23px;
@@ -1211,12 +1275,12 @@ nav .btn:hover {
     font-size: 60px;
 }
 #contact_second .btn {
-    background-color: var(--first-color);
+    background-color: var(--red-color);
     color: var(--white-color);
     border-radius: 30px;
 }
 #contact_second .btn:hover {
-    background-color: var(--red-color);
+    background-color: var(--first-color);
 }
 /* contact second */
 
@@ -1378,16 +1442,16 @@ nav .btn:hover {
     border: none;
 }
 #cart_on_product .btn {
-    background-color: var(--first-color);
+    background-color: var(--red-color);
     color: var(--white-color);
     border-radius: 30px;
 }
 #cart_on_product .btn:hover {
-    background-color: var(--red-color);
+    background-color: var(--first-color);
     color: var(--white-color);
 }
 #cart_on_product tr th a i {
-    color: var(--first-color);
+    color: var(--red-color);
 }
 #cart_on_product .cart_img {
     width: 80px;
@@ -1457,16 +1521,16 @@ nav .btn:hover {
     border: none;
 }
 #favourite_on_product .btn {
-    background-color: var(--first-color);
+    background-color: var(--red-color);
     color: var(--white-color);
     border-radius: 30px;
 }
 #favourite_on_product .btn:hover {
-    background-color: var(--red-color);
+    background-color: var(--first-color);
     color: var(--white-color);
 }
 #favourite_on_product tr th a i {
-    color: var(--first-color);
+    color: var(--red-color);
 }
 #favourite_on_product .cart_img {
     width: 80px;
@@ -1558,6 +1622,9 @@ nav .btn:hover {
     padding: 60px 0;
 }
 #blog_side .card h4 {
+    color: var(--red-color);
+}
+#blog_side .card h4:hover {
     color: var(--first-color);
 }
 #blog_side .card p {
@@ -1573,12 +1640,12 @@ nav .btn:hover {
     border-radius: 5px;
 }
 #blog_page .blog_right_search  .btn {
-    background-color: var(--first-color);
+    background-color: var(--red-color);
     color: var(--white-color);
     border: none;
 }
 #blog_page .blog_right_search  .btn:hover {
-    background-color: var(--red-color);
+    background-color: var(--first-color);
     color: var(--white-color);
 }
 #blog_page .blog_right_category {
@@ -1590,7 +1657,7 @@ nav .btn:hover {
     margin: 5px 0;
 }
 #blog_page .blog_right_category ul li a {
-    color: var(--first-color);
+    color: var(--red-color);
 }
 #blog_page .blog_right_shef {
     margin: 30px 0;
@@ -1638,7 +1705,7 @@ nav .btn:hover {
 }
 .single_blog_tags ul li {
     display: inline-block;
-    background-color: var(--first-color);
+    background-color: var(--red-color);
     margin: 3px;
     padding: 5px;
     border-radius: 3px;
@@ -1682,6 +1749,9 @@ nav .btn:hover {
     margin-bottom: 40px;
 }
 #related_post_div h4 {
+    color: var(--red-color);
+}
+#related_post_div h4:hover {
     color: var(--first-color);
 }
 #related_post_div p, small {
@@ -1798,7 +1868,7 @@ footer hr {
     color: var(--white-color);
 }
 footer .footer_first_part i {
-    color: var(--first-color);
+    color: var(--div-color-one);
     font-size: 20px;
 }
 footer .footer_first_part h3 {
@@ -1820,19 +1890,19 @@ footer .footer_second_part img {
     margin-bottom: 30px;
 }
 .subscribe_btn {
-    background-color: var(--first-color);
+    background-color: var(--red-color);
     color: var(--white-color);
 }
 .footer_learn_more_btn {
     color: var(--white-color);
-    background-color: var(--first-color);
+    background-color: var(--red-color);
 }
 .footer_learn_more_btn:hover {
-    background-color: var(--red-color);
+    background-color: var(--first-color);
     color: var(--white-color);
 }
 .subscribe_btn:hover {
-    background-color: var(--red-color);
+    background-color: var(--first-color);
     color: var(--white-color);
 }
 footer .footer_second_part p {
@@ -1857,7 +1927,7 @@ footer .footer_social_media ul li a {
     transition: all .5s ease-in-out;
 }
 footer .footer_social_media ul li a:hover {
-    color: var(--first-color);
+    color: var(--red-color);
     transition: all .5s ease-in-out;
 }
 footer .quick_link_menu li {
@@ -1867,7 +1937,7 @@ footer .quick_link_menu li a {
     color: var(--white-color);
 }
 footer .quick_link_menu li a i {
-    color: var(--first-color);
+    color: var(--red-color);
 }
 footer .support_link_menu li {
     margin: 10px 0;
@@ -1876,14 +1946,14 @@ footer .support_link_menu li a {
     color: var(--white-color);
 }
 footer .support_link_menu li a i {
-    color: var(--first-color);
+    color: var(--red-color);
 }
 footer .footer_social_media ul li:first-child {
     margin-left: 0;
 }
 
 footer .footer_copywrite_part {
-    background-color: var(--first-color);
+    background-color: var(--red-color);
     padding: 10px 0;
     color: var(--white-color);
 }

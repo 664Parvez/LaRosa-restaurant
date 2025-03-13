@@ -38,3 +38,22 @@ search_cross.addEventListener("click", (e) => {
 
     e.preventDefault()
 })
+
+// offer popup
+const popup_offer = document.getElementById("popup_offer")
+const popup_cross = document.getElementById("popup_cross")
+const popup_nothanks = document.querySelector(".popup_nothanks")
+
+setTimeout(function() {
+    if (!localStorage.getItem("popup_offer")) {
+        popup_offer.style.display = "block";
+        localStorage.setItem("popup_offer", "true");
+    }
+}, 5000);
+
+popup_cross.addEventListener("click", () => {
+    popup_offer.style.display = "none"
+})
+popup_nothanks.addEventListener("click", () => {
+    popup_offer.style.display = "none"
+})
