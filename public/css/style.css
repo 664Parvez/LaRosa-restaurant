@@ -643,6 +643,14 @@ nav .btn:hover {
     font-size: 35px;
     font-weight: 600;
 }
+#home_product_section .nav-pills .nav-link.active {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+#home_product_section .nav-link {
+    color: var(--red-color);
+    font-size: 18px;
+}
 #fish_icon {
     animation: fishAnim 3s alternate linear infinite;
 }
