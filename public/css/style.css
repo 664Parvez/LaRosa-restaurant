@@ -69,9 +69,9 @@ p {
 html {
     scroll-behavior: smooth;
 }
-/* html, body{
+html, body{
     overflow-x: hidden;
-} */
+}
 
 body {
     background-color: var(--light-red-color);
@@ -641,6 +641,23 @@ nav .btn:hover {
 
 
 /* Home Product */
+#home_product_section .swiper-slide {
+    background-color: transparent;
+}
+#home_product_section .swiper {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#home_product_section .swiper-button-prev:after {
+    font-size: 30px;
+    color: var(--black-color);
+    font-weight: 700;
+}
+#home_product_section .swiper-button-next:after {
+    font-size: 30px;
+    color: var(--black-color);
+    font-weight: 700;
+}
 #home_product_section {
     padding: 60px 0;
 }
@@ -715,6 +732,16 @@ nav .btn:hover {
 
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
+    #home_product_section .swiper-button-prev:after {
+        font-size: 25px;
+        color: var(--black-color);
+        font-weight: 700;
+    }
+    #home_product_section .swiper-button-next:after {
+        font-size: 25px;
+        color: var(--black-color);
+        font-weight: 700;
+    }
     #home_second_section {
         padding: 30px 0;
     }
