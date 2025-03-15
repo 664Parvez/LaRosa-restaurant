@@ -86,10 +86,10 @@ body {
 }
 #offer_popup {
     background-color: var(--div-color-one);
-    padding: 20px;
+    padding: 50px 20px;
     border-radius: 10px;
     overflow-y: scroll;
-    height: 700px;
+    height: 650px;
 }
 #offer_popup img {
     width: 200px;
@@ -117,6 +117,9 @@ body {
     cursor: pointer;
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
+    #offer_popup {
+        padding: 20px;
+    }
     #offer_popup img {
         width: 130px;
     }
