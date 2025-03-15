@@ -350,11 +350,42 @@ nav .btn:hover {
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     #sidebar_icon {
-        top: 130px;
-        padding: 5px;
+        /* top: 130px;
+        padding: 5px; */
+        display: none;
     }   
 }
 
+
+/* Bottom Bar */
+#bottombar_icon {
+    background-color: var(--red-color);
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding: 10px 8px;
+    text-align: center;
+    z-index: 900;
+    display: none;
+}
+#bottombar_icon ul {
+    display: flex;
+    justify-content: space-around;
+}
+#bottombar_icon ul li a {
+    color: var(--white-color);
+}
+#bottombar_icon sup {
+    background-color: var(--offwhite-color);
+    color: var(--red-color);
+    padding: 2px;
+    border-radius: 50%;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #bottombar_icon {
+        display: block;
+    }
+}
 
 
 /* Hero */
@@ -1988,6 +2019,9 @@ footer .footer_copywrite_part a {
     width: 700px;
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
+    footer {
+        margin-bottom: 52px;
+    }
     footer .footer_second_part h5 {
         margin-top: 30px;
     }
@@ -2020,5 +2054,11 @@ footer .footer_copywrite_part a {
     }
     100% {
         transform: translateY(0px);
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #btn-back-to-top {
+        bottom: 60px;
     }
 }

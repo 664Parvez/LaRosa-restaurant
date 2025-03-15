@@ -39,6 +39,22 @@ search_cross.addEventListener("click", (e) => {
     e.preventDefault()
 })
 
+// Bottom Search Button
+const bottomSearchIcon = document.querySelector(".bottomSearchIcon")
+const bottomSearch_form = document.querySelector(".search_form")
+const bottomSearch_cross = document.getElementById("search_cross")
+
+bottomSearchIcon.addEventListener("click", (e) => {
+    bottomSearch_form.classList.add("search_form_hide")
+    
+    e.preventDefault()
+})
+bottomSearch_cross.addEventListener("click", (e) => {
+    bottomSearch_form.classList.remove("search_form_hide")
+
+    e.preventDefault()
+})
+
 // offer popup
 const popup_offer = document.getElementById("popup_offer")
 const popup_cross = document.getElementById("popup_cross")
