@@ -66,11 +66,17 @@ p {
     box-shadow: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+html, body{
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--light-red-color);
     max-width: 2000px;
     margin: auto;
-    overflow-x: hidden;
 }
 
 #popup_offer {
