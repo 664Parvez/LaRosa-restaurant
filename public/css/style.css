@@ -1076,6 +1076,23 @@ nav .btn:hover {
     color: var(--red-color);
     font-size: 18px;
 }
+#menu_page .menu_page_first .swiper-slide {
+    background-color: transparent;
+}
+#menu_page .menu_page_first .swiper {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#menu_page .menu_page_first .swiper-button-prev:after {
+    font-size: 30px;
+    color: var(--black-color);
+    font-weight: 700;
+}
+#menu_page .menu_page_first .swiper-button-next:after {
+    font-size: 30px;
+    color: var(--black-color);
+    font-weight: 700;
+}
 #menu_page .menu_page_first h3 {
     font-size: 50px;
     font-weight: 700;
